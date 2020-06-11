@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;cin>>t;
+    while(t--)
+    {
+        int a,b,cnt=0;
+        cin>>a>>b;
+        vector<int> ar1,ar2;
+        for(int i=0;i<a;i++)
+        {int item;cin>>item;ar1.push_back(item);}
+        
+        for(int i=0;i<b;i++)
+        {int item;cin>>item;ar2.push_back(item);}
+       
+        int hash[100000]={0};
+        for(int i=0;i<a;i++)
+        hash[ar1[i]]=1;
+        
+        sort(ar2.begin(),ar2.end());
+        
+         if(hash[ar2[0]]>0)
+         cnt++;
+        for(int i=1;i<b;i++)
+        {
+            if(ar2[i]!=ar2[i-1])
+            {
+                if(hash[ar2[i]]>0)
+                cnt++;
+            }
+        }
+        
+        cout<<cnt<<"\n";
+    }
+	return 0;
+}
