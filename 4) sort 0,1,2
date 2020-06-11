@@ -1,0 +1,22 @@
+void sort012(int a[], int n)
+{
+    int start=0;
+    int end=n-1;
+    int i=0;
+    while(i<=end)
+    {
+        if(a[i]==0)
+        {
+            swap(a[i],a[start]);
+            start++;
+            i++;
+        }
+        else if(a[i]==2)
+        {
+            swap(a[i],a[end]);
+            end--;
+        }
+        else
+        i++;
+    }
+}
