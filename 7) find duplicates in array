@@ -1,0 +1,17 @@
+
+vector<int> duplicates(int a[], int n) {
+    // code here
+    long hash[n]={0};
+    for(int i=0;i<n;i++)
+    hash[a[i]]++;
+    
+    vector<int> ans;
+    for(int j=0;j<n;j++)
+    {
+        if(hash[j]>1)
+        ans.push_back(j);
+    }
+    if(ans.size()==0)
+    ans.push_back(-1);
+    return ans;
+}
