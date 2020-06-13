@@ -8,3 +8,4 @@ Putting down codes of various questions I have practised on various sites
 6) find pairs given sum - https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum/0
 7) find duplicates in array -https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
 8) common elements from three arrays - https://practice.geeksforgeeks.org/problems/common-elements/0
+9) first repeating element - https://practice.geeksforgeeks.org/problems/first-repeating-element/0
