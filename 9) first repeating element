@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+bool ifduplicateexists(int no,int a[], int i,int n)
+{
+    //will return if dupliacte no of no exists ater
+    //index i in array a
+    for(int j=i+1;j<n;j++)
+    {
+        if(a[j]==no)
+        return true;
+    }
+    return false;
+}
+
+int main() {
+	//code
+	int t;cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    bool done=false;
+	    for(int i=0;i<n;i++)
+	    cin>>a[i];
+	    for(int i=0;i<n;i++)
+	    {
+	        if(ifduplicateexists(a[i],a,i,n)==true)
+	        {
+	            cout<<i+1<<"\n";
+	            done=true;
+	            break;
+	        }
+	    }
+	    if(done==false)
+	    cout<<"-1"<<"\n";
+	    
+	    
+	}
+	return 0;
+}
