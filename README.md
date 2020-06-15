@@ -10,3 +10,4 @@ Putting down codes of various questions I have practised on various sites
 8) common elements from three arrays - https://practice.geeksforgeeks.org/problems/common-elements/0
 9) first repeating element - https://practice.geeksforgeeks.org/problems/first-repeating-element/0
 10) remove white spaces - https://practice.geeksforgeeks.org/problem-page.php?pid=454
+11) anagram - https://practice.geeksforgeeks.org/problems/anagram/0
