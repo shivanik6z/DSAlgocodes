@@ -1,0 +1,29 @@
+#include <iostream>
+//#include<string>
+using namespace std;
+
+int main() {
+    int t;cin>>t;
+    cin.ignore();
+    while(t--)
+    {
+        
+      char s[1000];
+      cin.getline(s,999);
+      
+        int k=0;
+        //int n= sizeof(s)/sizeof(s[0]);
+        for(int i=0;s[i];i++)
+        {
+            if(s[i]!=' ')
+            {
+                s[k++]=s[i];
+                //k++;
+            }
+        }
+        s[k++]='\0';
+        cout<<s<<endl;
+    }
+	//code
+	return 0;
+}
