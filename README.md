@@ -12,3 +12,4 @@ Putting down codes of various questions I have practised on various sites
 10) remove white spaces - https://practice.geeksforgeeks.org/problem-page.php?pid=454
 11) anagram - https://practice.geeksforgeeks.org/problems/anagram/0
 12) reverse words in string - https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0
+13) palindrome string - https://practice.geeksforgeeks.org/problems/palindrome-string/0
