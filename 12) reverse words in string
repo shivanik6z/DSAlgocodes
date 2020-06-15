@@ -1,0 +1,30 @@
+#include <iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    cin.ignore();
+    while(t--)
+    {
+        string s;
+        getline(cin,s);
+        int j=0;
+        reverse(s.begin(),s.end());
+        for(int i=0;i<s.length();i++)
+        {
+            if(s[i]=='.')
+            {
+                reverse(s.begin()+j,s.begin()+i);
+                j=i+1;
+            }
+        }
+        reverse(s.begin()+j,s.end());
+        
+        cout<<s<<endl;
+    }
+	//code
+	return 0;
+}
